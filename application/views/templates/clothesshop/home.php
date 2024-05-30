@@ -71,7 +71,7 @@ foreach ($all_categories as $categorie) {
                     <h2 class="hidden-xs"><?= lang('welcome') ?></h2>
                 </div>
                 <div class="col-sm-4">
-                    <?= $load::getProducts($bestSellers, '', true) ?>
+                    <?= $load::getProducts($bestsellers, '', true) ?>
                 </div>
             </div>
         <?php } ?>

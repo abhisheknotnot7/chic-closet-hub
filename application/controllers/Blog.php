@@ -38,7 +38,7 @@ class Blog extends MY_Controller
         }
         $data['posts'] = $this->Public_model->getPosts($this->num_rows, $page, $find, $month);
         $data['archives'] = $this->getBlogArchiveHtml();
-        $data['bestSellers'] = $this->Public_model->getbestSellers();
+        $data['bestsellers'] = $this->Public_model->getbestsellers();
         $rowscount = $this->Blog_model->postsCount($find);
         $data['links_pagination'] = pagination('blog', $rowscount, $this->num_rows);
         $this->render('blog', $head, $data);

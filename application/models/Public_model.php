@@ -445,7 +445,7 @@ class Public_model extends CI_Model
         return $query->result_array();
     }
 
-    public function getbestSellers($categorie = 0, $noId = 0)
+    public function getbestsellers($categorie = 0, $noId = 0)
     {
         $this->db->select('vendors.url as vendor_url, products.id, products.quantity, products.image, products.url, products_translations.price, products_translations.title, products_translations.old_price');
         $this->db->join('products_translations', 'products_translations.for_id = products.id', 'left');

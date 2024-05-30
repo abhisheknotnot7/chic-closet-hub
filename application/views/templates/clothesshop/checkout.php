@@ -179,7 +179,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="title cloth-bg-color">
                             <span><?= lang('best_sellers') ?></span>
                         </div>
-                        <?= $load::getProducts($bestSellers, '', true) ?>
+                        <?= $load::getProducts($bestsellers, '', true) ?>
                     </div>
                 </div>
             </div>
